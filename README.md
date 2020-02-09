@@ -1,5 +1,5 @@
 [![PyPI version](https://badge.fury.io/py/auto-table-extract.svg)](https://badge.fury.io/py/auto-table-extract)
-[![Python 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+[![Python 3 | 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
 # Automated Table Extractor
 
 A Python package to extract tables from PDF documents
