@@ -1,5 +1,10 @@
 [![PyPI version](https://badge.fury.io/py/auto-table-extract.svg)](https://badge.fury.io/py/auto-table-extract)
-[![Python 3 | 3.6](https://img.shields.io/badge/python-3.6-blue.svg)](https://www.python.org/downloads/release/python-360/)
+![PyPI - Python Version](https://img.shields.io/pypi/pyversions/auto-table-extract)
+![GitHub](https://img.shields.io/github/license/rohit-sahoo/auto-table-extract)
+![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/pypi/auto-table-extract)
+![PyPI - Wheel](https://img.shields.io/pypi/wheel/auto-table-extract)
+![PyPI - Downloads](https://img.shields.io/pypi/dm/auto-table-extract)
+
 # Automated Table Extractor
 
 A Python package to extract tables from PDF documents
@@ -22,11 +27,15 @@ from auto_table_extract import auto_table_extract
 auto_table_extract("input_file") #input_file should be PDF
 ```
 
+## Developed by:
+1) **Rohit Sahoo** (rohitsahoo741@gmail.com)
+2) **Chinmay Kathale** (chinmayk998@gmail.com)
+3) **Milind Kubal**(kubalmilind@gmail.com)
+
+
 ## License
 
-**MIT License**
-
-**Copyright (c) 2020 rohit-sahoo**
+**Copyright 2020 Rohit-Sahoo**
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
