@@ -4,33 +4,49 @@
 ![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/pypi/auto-table-extract)
 ![PyPI - Wheel](https://img.shields.io/pypi/wheel/auto-table-extract)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/auto-table-extract)
+![Libraries.io dependency status for latest release](https://img.shields.io/librariesio/release/pypi/auto-table-extract)
 
 # Automated Table Extractor
+![Auto_Table_Extract](https://i.ibb.co/gF7nyvL/icon3.png)
+<br />
+`auto-table-extract` is a Python package to extract tables from PDF documents. <br />
+This package helps to extract all the table contents (tables can be bordered, borderless or partially bordered) from the searchable and scanned pdf document and dumps it into an excel sheet.<br />
 
-A Python package to extract tables from PDF documents
-This package helps to extract all the table contents from the PDF searchable and scanned pdf document and dumps it into an excel sheet.
+## What's new in version 2.0?
+1) Added feature to extract tables from scanned documents.
+2) Saves the file on desktop as "filename.xlsx" rather than output.xlsx, making it easier to track your files. 
+3) Bug Fixes
 
 ## Main features
-1) Creates an excel file having the extracted contents of the table from PDF
-2) It can be used for both searchable(contents can be selected) as well as scanned documents
-3) It works for any orientation of the document
+1) Can extract tables from bordered tables, partially bordered tables (missing column lines / missing row lines) and also from fully borderless tables.
+2) Extracts only the text inside the table. It won't extract the paragraphs, matrix, bar-charts or any text outside table.
+2) Creates an Excel file having the extracted contents of the table from PDF.
+3) Can be used for both searchable(contents can be selected) as well as scanned documents.
+4) Works for any orientation of the document.
 
 ## Requirements
-1) pdfminer
+1) pdfminer   
 2) scikit-learn
 3) pandas
 4) ocrmypdf
+5) Numpy
+6) PyPDF2
+
+## Installation
+1) Install Tesseract OCR <br />
+[Download Tesseract 32 bit](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w32-setup-v5.0.0-alpha.20191030.exe)<br />
+[Download Tesseract 64 bit](https://digi.bib.uni-mannheim.de/tesseract/tesseract-ocr-w64-setup-v5.0.0-alpha.20191030.exe)<br />
+
+2) Install ghostscript <br />
+[Download ghostscript](https://www.ghostscript.com/download/gsdnld.html)
+
 
 ## Usage
 ```python
 from auto_table_extract import auto_table_extract 
 auto_table_extract("input_file") #input_file should be PDF
+#The Excel file will be saved to your Desktop
 ```
-
-## Developed by:
-1) **Rohit Sahoo** (rohitsahoo741@gmail.com)
-2) **Chinmay Kathale** (chinmayk998@gmail.com)
-3) **Milind Kubal**(kubalmilind@gmail.com)
 
 
 ## License
