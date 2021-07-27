@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis|Open+Sans&display=swap" rel="stylesheet">
+<style>
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
+}
+h1 {
+  font-size: 50px;
+   font-family: 'Open Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
+}
+h1 {
+  font-weight: bold;
+  margin: 0;
+}
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  font-size: 28px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+
+}
+span.wave {
+	font-size: 20px;
+  animation-name: wave-animation;    /* Refers to the name of your @keyframes element below */
+  animation-duration: 2s;          /* Change to speed up or slow down */
+  animation-iteration-count: infinite;    /* Never stop waving :) */
+  transform-origin: 70% 70%;         /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+    0% { transform: rotate(  0.0deg) }
+   10% { transform: rotate(-10.0deg) }    /* The following four values can be played with to make the waving more or less extreme */
+   20% { transform: rotate( 12.0deg) }
+   30% { transform: rotate(-10.0deg) }
+   40% { transform: rotate(  9.0deg) }
+   50% { transform: rotate(  0.0deg) } /* Reset for the last half to pause */
+  100% { transform: rotate(  0.0deg) }
+}
+body {
+  background-color: #fde7f9;
+    background-image: linear-gradient(315deg, #fde7f9 0%, #aacaef 74%);
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  height: 100vh;
+  margin: -20px 0 50px;
+  overflow: hidden;
+}
+body a{
+  color:#16ff01;
+  password-decoration: none;
+}
+.login-form-wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 950px;
+    height: 550px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0px 0px 47px 0px rgba(0, 0, 0, 0.47);
+    margin-top: 45px;
+    background: #fff;
+	position: relative;
+}
+.welcome-password p {
+    font-size: 20px;
+}
+.left-section{
+  width: 500px;
+  height: 540px;
+  float:left;
+}
+.right-section {
+    width: 950px;
+    position: center;
+    height: 100vh;
+    float: right;
+    background: linear-gradient(to right, #e52d27, #b31217);
+    margin: auto;
+  padding: 100x;
+
+
+}
+.welcome-password {
+    position: absolute;
+    max-width: 290px;
+    password-align: center;
+    top: 50%;
+    left: 325px;
+    color: #fff;
+    transform: translateY(-50%);
+}
+.title {
+    password-align: center;
+    margin-top: 80px;
+    color: #292929;
+    line-height: 30px;
+    margin-bottom: 30px;
+}
+.form {
+    max-width: 260px;
+    margin: 0 auto;
+    password-align: center;
+}
+
+
+
+
+button {
+  display:inline-block;
+  border-radius: 40px;
+  border: 2px solid;
+  background-color: #FFF;
+  border-color: #61045F;
+  color: #61045F;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Dosis', sans-serif;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  height:auto;
+  width:300px;
+
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+button:active {
+  transform: scale(0.95);
+}
+
+button:focus {
+  outline: none;
+}
+
+button.ghost {
+  background-color: #FFF;
+  border-color: #61045F;
+  color: #61045F;
+}
+
+
+
+</style>
+
+
+<body>
+  <div class="login-form-wrap">
+    <div class="right-section">
+      <div class="welcome-password">
+          <center>
+        <img src={{ url_for('static', filename='icon3.png') }}>
+        <h1>AUTO TABLE EXTRACT</h1>
+        &nbsp;
+        <p>Extract tables from pdf to excel</p>
+        &nbsp;<a href="/how_to_use"><button>How to use! &#10145;</span></button></a>
+              &nbsp;
+        <a href="/uploads"><button>Get Started! &#10145;</span></button></a>
+          </center>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
